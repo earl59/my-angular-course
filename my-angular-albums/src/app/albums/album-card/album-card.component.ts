@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { getLocaleNumberSymbol } from '@angular/common';
 
 import { Album } from '../album.model';
@@ -12,6 +12,13 @@ export class AlbumCardComponent implements OnInit {
   @Input()
   album: Album;
  
+  @Output()
+    albumClicked: EventEmitter<Album> = new EventEmitter<Album>();
+ 
+    showAlbum() {
+      this.albumClicked.emit(this.album);
+  }
+
   constructor() { }
 
   ngOnInit() {
