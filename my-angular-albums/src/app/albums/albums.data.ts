@@ -1,8 +1,75 @@
 import { Album } from "./album.model";
 
 export const ALBUMS: Album[] = [
-  {
-    id: 1,
+  {id: 1,
+    artist: "Yes",
+    albumName: "Fragile",
+    onSale: true,
+    currency: "USD",
+    price: 11.99,
+    year: 1971,
+    releaseDate: "November 12, 1971",
+    recordingLocation: "Advision Studios, London, UK",
+    genre: "Prog/Rock",
+    duration: "41:10:00",
+    url: "https://www.allmusic.com/album/fragile-mw0000391610",
+    tracks: [
+      {
+        id: 1,
+        trackNumber: 1,
+        title: "Roundabout",
+        length: "8:29"
+      },
+      {
+        id: 1,
+        trackNumber: 2,
+        title: "Cans and Brahms",
+        length: "1:35"
+      },
+      {
+        id: 1,
+        trackNumber: 3,
+        title: "We Have Heaven",
+        length: "1:30"
+      },
+      {
+        id: 1,
+        trackNumber: 4,
+        title: "South Side of the Sky",
+        length: "8:04"
+      },
+      {
+        id: 1,
+        trackNumber: 5,
+        title: "Five Per Cent for Nothing",
+        length: "0:35"
+      },
+      {
+        id: 1,
+        trackNumber: 6,
+        title: "Long Distance Runaround",
+        length: "3:33"
+      },
+      {
+        id: 1,
+        trackNumber: 7,
+        title: "Fish (Shindleria Praematurus",
+        length: "2:35"
+      },
+      {
+        id: 1,
+        trackNumber: 8,
+        title: "Mood for A Day",
+        length: "2:57"
+      },
+      {
+        id: 1,
+        trackNumber: 9,
+        title: "Heart of the Sunrise",
+        length: "10:34"
+      }    ]
+  },
+  {id: 17,
     artist: "Tremonti",
     albumName: "Dust",
     onSale: true,
