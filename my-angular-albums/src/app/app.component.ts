@@ -1,12 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from "@angular/core";
 
-// import { Album } from './albums/album.model';
+import { Album } from "./albums/album.model";
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.css'],
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
-export class AppComponent  {
-    title = 'Angular Albums';
+export class AppComponent {
+  title = "My Angular Albums";
+
+  constructor() {}
 }
